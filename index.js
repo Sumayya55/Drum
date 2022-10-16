@@ -2,7 +2,7 @@ var nodeListLength = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < nodeListLength; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-    var buttonInnerHTML = this.innerHTML; // this. means the current object
+    var buttonInnerHTML = this.innerHTML; 
     makeSound(buttonInnerHTML);
     addAnimation(buttonInnerHTML);
   });
